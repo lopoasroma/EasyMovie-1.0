@@ -57,7 +57,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="NyT-1A-Uvy"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="F9m-tM-3Y1"/>
+                    <tabBarItem key="tabBarItem" title="Profilo" image="Profilo" id="F9m-tM-3Y1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="96B-DB-lp7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -86,13 +86,13 @@
                             <outlet property="delegate" destination="lVy-IR-MCk" id="oZN-nz-GrX"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="Z3r-Ls-eNC"/>
+                    <tabBarItem key="tabBarItem" title="Notifiche" image="Notifiche" id="Z3r-Ls-eNC"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="icu-Av-cT1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1188" y="1056.5217391304348"/>
         </scene>
-        <!--Item-->
+        <!--Preferiti-->
         <scene sceneID="fjq-L1-ym5">
             <objects>
                 <viewController id="Ddl-pk-iyC" sceneMemberID="viewController">
@@ -102,7 +102,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="K08-Hp-oNm"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="FAQ-K0-qOB"/>
+                    <tabBarItem key="tabBarItem" title="Preferiti" image="Preferiti" id="FAQ-K0-qOB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xdE-xk-s2T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -161,7 +161,7 @@
                             <outlet property="delegate" destination="6ca-0E-K98" id="w9F-0y-9cQ"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Home" id="Y7g-SQ-QFO"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home" id="Y7g-SQ-QFO"/>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
@@ -175,6 +175,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="DxY-dz-jiR" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Kwe-7c-BPp">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -193,6 +194,10 @@
     <resources>
         <image name="EasyMovie" width="249" height="62"/>
         <image name="EasyMovielogo" width="89" height="27"/>
+        <image name="Home" width="30" height="30"/>
+        <image name="Notifiche" width="30" height="30"/>
+        <image name="Preferiti" width="30" height="30"/>
+        <image name="Profilo" width="30" height="30"/>
         <image name="jon-flobrant-462820" width="2463" height="1642"/>
     </resources>
 </document>
