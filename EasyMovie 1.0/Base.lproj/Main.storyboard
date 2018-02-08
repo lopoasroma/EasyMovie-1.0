@@ -55,7 +55,7 @@
                                             <rect key="frame" x="16" y="0.0" width="93" height="93"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titolo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYl-0F-jAK">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titolo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYl-0F-jAK">
                                             <rect key="frame" x="127" y="0.0" width="248" height="27"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
@@ -71,6 +71,11 @@
                                         </textView>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dettagliCategoria" destination="bSe-9b-CN3" id="nfL-9c-BTs"/>
+                                    <outlet property="foto" destination="V4S-5v-LOh" id="bLX-JY-wnM"/>
+                                    <outlet property="nomeCategoria" destination="lYl-0F-jAK" id="QqK-pM-NfN"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

@@ -8,17 +8,8 @@
 
 import UIKit
 
-enum diff {
-    case Basso
-    case Medio
-    case Alto
-    case MedioAlto
-    case MedioBasso
-}
-
 struct categoriaHome {
     var nome: String
-    var difficoltà: diff
     var immagine: UIImage
     var descrizione: String
 }
@@ -38,19 +29,19 @@ struct videoPlay {
     var salvato: Bool
 }
 
-var consigliU = categoriaHome(nome: "Consigli utili", difficoltà: .Basso, immagine: <#T##UIImage#>, descrizione: "Qui troverai consigli utili per tutti i programmi di video editing. Consulta queste pagine prima di iniziare!")
+var consigliU = categoriaHome(nome: "Consigli utili", immagine: <#T##UIImage#>, descrizione: "Qui troverai consigli utili per tutti i programmi di video editing. Consulta queste pagine prima di iniziare!")
 
-var movieMaker = categoriaHome(nome: "Windows Movie Maker", difficoltà: .Basso, immagine: <#T##UIImage#>, descrizione: "")
+var movieMaker = categoriaHome(nome: "Windows Movie Maker", immagine: <#T##UIImage#>, descrizione: "Livello: Basso")
 
-var pinnacleStudio = categoriaHome(nome: "Pinnacle Studio", difficoltà: .Medio, immagine: <#T##UIImage#>, descrizione: "")
+var pinnacleStudio = categoriaHome(nome: "Pinnacle Studio", immagine: <#T##UIImage#>, descrizione: "Livello: Medio")
 
-var iMovie = categoriaHome(nome: "iMovie", difficoltà: .MedioAlto, immagine: <#T##UIImage#>, descrizione: "")
+var iMovie = categoriaHome(nome: "iMovie", immagine: <#T##UIImage#>, descrizione: "Livello: Medio/Alto")
 
-var wondershareFilmora = categoriaHome(nome: "Wondershare Filmora", difficoltà: .MedioAlto, immagine: <#T##UIImage#>, descrizione: "")
+var wondershareFilmora = categoriaHome(nome: "Wondershare Filmora", immagine: <#T##UIImage#>, descrizione: "Livello: Medio/Alto")
 
-var sonyVegas = categoriaHome(nome: "Sony Vegas", difficoltà: .Alto, immagine: <#T##UIImage#>, descrizione: "")
+var sonyVegas = categoriaHome(nome: "Sony Vegas", immagine: <#T##UIImage#>, descrizione: "Livello: Alto")
 
-var hitFilm = categoriaHome(nome: "Hitfilm", difficoltà: .Alto, immagine: <#T##UIImage#>, descrizione: "")
+var hitFilm = categoriaHome(nome: "Hitfilm", immagine: <#T##UIImage#>, descrizione: "Livello: Alto")
 
 var elencoCategorie = [consigliU,movieMaker,iMovie,pinnacleStudio,wondershareFilmora,sonyVegas,hitFilm]
 
