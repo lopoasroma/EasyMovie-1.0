@@ -29,20 +29,22 @@ struct videoPlay {
     var salvato: Bool
 }
 
-var consigliU = categoriaHome(nome: "Consigli utili", immagine: <#T##UIImage#>, descrizione: "Qui troverai consigli utili per tutti i programmi di video editing. Consulta queste pagine prima di iniziare!")
+var intro = categoriaHome(nome: "Introduzione", immagine: #imageLiteral(resourceName: "jakob-owens-199505"), descrizione: "Benvenuto! Guarda questo video per apprendere i concetti base del video editing.")
 
-var movieMaker = categoriaHome(nome: "Windows Movie Maker", immagine: <#T##UIImage#>, descrizione: "Livello: Basso")
+var consigliU = categoriaHome(nome: "Consigli utili", immagine: #imageLiteral(resourceName: "Consigli"), descrizione: "Qui troverai consigli utili per tutti i programmi di video editing. Consulta queste pagine prima di iniziare!")
 
-var pinnacleStudio = categoriaHome(nome: "Pinnacle Studio", immagine: <#T##UIImage#>, descrizione: "Livello: Medio")
+var movieMaker = categoriaHome(nome: "Movie Maker", immagine: #imageLiteral(resourceName: "Windows-movie-maker-2012-08-535x5351"), descrizione: "Livello: Basso")
 
-var iMovie = categoriaHome(nome: "iMovie", immagine: <#T##UIImage#>, descrizione: "Livello: Medio/Alto")
+var pinnacleStudio = categoriaHome(nome: "Pinnacle Studio", immagine: #imageLiteral(resourceName: "rounded-icon"), descrizione: "Livello: Medio")
 
-var wondershareFilmora = categoriaHome(nome: "Wondershare Filmora", immagine: <#T##UIImage#>, descrizione: "Livello: Medio/Alto")
+var iMovie = categoriaHome(nome: "iMovie", immagine: #imageLiteral(resourceName: "sony-vegas"), descrizione: "Livello: Medio/Alto")
 
-var sonyVegas = categoriaHome(nome: "Sony Vegas", immagine: <#T##UIImage#>, descrizione: "Livello: Alto")
+var wondershareFilmora = categoriaHome(nome: "Filmora", immagine: #imageLiteral(resourceName: "filmora"), descrizione: "Livello: Medio/Alto")
 
-var hitFilm = categoriaHome(nome: "Hitfilm", immagine: <#T##UIImage#>, descrizione: "Livello: Alto")
+var sonyVegas = categoriaHome(nome: "Sony Vegas", immagine: #imageLiteral(resourceName: "sony-vegas"), descrizione: "Livello: Alto")
 
-var elencoCategorie = [consigliU,movieMaker,iMovie,pinnacleStudio,wondershareFilmora,sonyVegas,hitFilm]
+var hitFilm = categoriaHome(nome: "Hitfilm", immagine: #imageLiteral(resourceName: "IMG_0460"), descrizione: "Livello: Alto")
+
+var elencoCategorie = [intro,consigliU,movieMaker,iMovie,pinnacleStudio,wondershareFilmora,sonyVegas,hitFilm]
 
 
