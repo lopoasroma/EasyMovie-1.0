@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jon-flobrant-462820" translatesAutoresizingMaskIntoConstraints="NO" id="g48-Ln-4Mg">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="726"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EasyMovie" translatesAutoresizingMaskIntoConstraints="NO" id="w3v-Q1-OIg">
@@ -37,7 +37,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="EasyMovie" width="329" height="74"/>
+        <image name="EasyMovie" width="249" height="62"/>
         <image name="jon-flobrant-462820" width="2463" height="1642"/>
     </resources>
 </document>
