@@ -37,7 +37,7 @@ var movieMaker = categoriaHome(nome: "Movie Maker", immagine: #imageLiteral(reso
 
 var pinnacleStudio = categoriaHome(nome: "Pinnacle Studio", immagine: #imageLiteral(resourceName: "rounded-icon"), descrizione: "Livello: Medio")
 
-var iMovie = categoriaHome(nome: "iMovie", immagine: #imageLiteral(resourceName: "sony-vegas"), descrizione: "Livello: Medio/Alto")
+var iMovie = categoriaHome(nome: "iMovie", immagine: #imageLiteral(resourceName: "iMovie"), descrizione: "Livello: Medio/Alto")
 
 var wondershareFilmora = categoriaHome(nome: "Filmora", immagine: #imageLiteral(resourceName: "filmora"), descrizione: "Livello: Medio/Alto")
 
