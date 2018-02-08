@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "filmora.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "filmora.png",
       "scale" : "2x"
     },
     {

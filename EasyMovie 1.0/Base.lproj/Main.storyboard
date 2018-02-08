@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -30,7 +35,7 @@
                                 <rect key="frame" x="0.0" y="-1" width="375" height="668"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="6ca-0E-K98" kind="show" id="YjQ-qj-n7u"/>
+                                    <segue destination="DxY-dz-jiR" kind="show" id="TaV-4H-Qyh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -40,39 +45,105 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="-788" y="231"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="RTU-BL-JxY">
+        <!--Notifiche-->
+        <scene sceneID="IFt-dh-9oF">
             <objects>
-                <tableViewController id="6ca-0E-K98" customClass="TableViewController" customModule="EasyMovie_1_0" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="116" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="GDX-Gn-U6h">
+                <viewController title="Notifiche" id="rFK-px-y2f" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="16M-8s-5jb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="NyT-1A-Uvy"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="F9m-tM-3Y1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="96B-DB-lp7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="407.19999999999999" y="1057.4212893553224"/>
+        </scene>
+        <!--Preferiti-->
+        <scene sceneID="vO8-ln-e11">
+            <objects>
+                <tableViewController title="Preferiti" id="lVy-IR-MCk" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="TsZ-fq-NaZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="xrF-9m-FIh">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xrF-9m-FIh" id="mxW-m7-Hv9">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="lVy-IR-MCk" id="YfG-t7-Deu"/>
+                            <outlet property="delegate" destination="lVy-IR-MCk" id="oZN-nz-GrX"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="Z3r-Ls-eNC"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="icu-Av-cT1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1188" y="1056.5217391304348"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="fjq-L1-ym5">
+            <objects>
+                <viewController id="Ddl-pk-iyC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TtC-bA-XRz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="K08-Hp-oNm"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="FAQ-K0-qOB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xdE-xk-s2T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1972" y="1056.5217391304348"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="RTU-BL-JxY">
+            <objects>
+                <tableViewController title="Home" id="6ca-0E-K98" customClass="TableViewController" customModule="EasyMovie_1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="116" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="GDX-Gn-U6h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EasyMovielogo" id="mer-LB-RBg">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="100" reuseIdentifier="cell" rowHeight="100" id="TEb-Z8-Dq4" customClass="TableViewCell" customModule="EasyMovie_1_0" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TEb-Z8-Dq4" id="H9d-Ic-8YA">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V4S-5v-LOh">
-                                            <rect key="frame" x="16" y="0.0" width="93" height="93"/>
+                                            <rect key="frame" x="16" y="6" width="88" height="88"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="dettagli" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSe-9b-CN3">
-                                            <rect key="frame" x="127" y="35" width="232" height="58"/>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Dettagli" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSe-9b-CN3">
+                                            <rect key="frame" x="127" y="31" width="232" height="63"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titolo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYl-0F-jAK">
-                                            <rect key="frame" x="127" y="0.0" width="248" height="27"/>
+                                            <rect key="frame" x="127" y="6" width="248" height="27"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -90,14 +161,38 @@
                             <outlet property="delegate" destination="6ca-0E-K98" id="w9F-0y-9cQ"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Home" id="Y7g-SQ-QFO"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fbl-Zq-RPv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="896.79999999999995" y="138.98050974512745"/>
+            <point key="canvasLocation" x="-338" y="1056"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="9rQ-Te-s2J">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="DxY-dz-jiR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Kwe-7c-BPp">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="6ca-0E-K98" kind="relationship" relationship="viewControllers" id="3IP-KK-pD3"/>
+                        <segue destination="lVy-IR-MCk" kind="relationship" relationship="viewControllers" id="a46-nD-mSu"/>
+                        <segue destination="Ddl-pk-iyC" kind="relationship" relationship="viewControllers" id="yi2-UQ-W9P"/>
+                        <segue destination="rFK-px-y2f" kind="relationship" relationship="viewControllers" id="Wqa-PA-v52"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CYb-Oh-Gzu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="775" y="231"/>
         </scene>
     </scenes>
     <resources>
         <image name="EasyMovie" width="249" height="62"/>
+        <image name="EasyMovielogo" width="89" height="27"/>
         <image name="jon-flobrant-462820" width="2463" height="1642"/>
     </resources>
 </document>
