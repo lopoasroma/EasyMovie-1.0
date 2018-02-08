@@ -38,7 +38,7 @@
         <!--Table View Controller-->
         <scene sceneID="RTU-BL-JxY">
             <objects>
-                <tableViewController id="6ca-0E-K98" sceneMemberID="viewController">
+                <tableViewController id="6ca-0E-K98" customClass="TableViewController" customModule="EasyMovie_1_0" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="GDX-Gn-U6h">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
