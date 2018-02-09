@@ -8,18 +8,32 @@
 
 import UIKit
 
-struct categoriaHome {
+class categoriaHome {
     var nome: String
     var immagine: UIImage
     var descrizione: String
+    var listaVideo: [videoLista]
+    init (nome: String, immagine: UIImage, descrizione: String)
+    {
+        self.nome = nome
+        self.immagine = immagine
+        self.descrizione = descrizione
+        listaVideo = [videoLista]()
+    }
 }
 
-struct videoLista {
-    var categoria: categoriaHome
+class videoLista {
     var titolo: String
     var data: String
     var autore: String
     var immagine: UIImage
+    init (titolo: String, data: String, autore: String, immagine: UIImage)
+    {
+        self.titolo = titolo
+        self.immagine = immagine
+        self.autore = autore
+        self.data = data
+    }
 }
 
 struct videoPlay {
@@ -73,6 +87,20 @@ var imovie5 = videoLista(titolo: "I temi", data: "18 Mar 2017", autore: "Fabrizi
 var imovie6 = videoLista(titolo: "I trailer", data: "18 Mar 2017", autore: "Fabrizio Gherardi", immagine: #imageLiteral(resourceName: "iMovie7"))
 var imovie7 = videoLista(titolo: "Il rendering", data: "21 Mar 2017", autore: "Fabrizio Gherardi", immagine: #imageLiteral(resourceName: "iMovie8"))
 
+
+var movieMaker1 = videoLista(titolo: "Corso completo di Movie Maker-Parte 1", data: "26 Luglio 2016", autore: "Fabrizio Gherardi", immagine: <#T##UIImage#>)
+var movieMaker2 = videoLista(titolo: "Corso completo di Movie Maker-Parte 2", data: "26 Luglio 2016", autore: "Fabrizio Gherardi", immagine: <#T##UIImage#>)
+var movieMaker3 = videoLista(titolo: "Corso completo di Movie Maker-Parte 3", data: "26 Luglio 2016", autore: "Fabrizio Gherardi", immagine: <#T##UIImage#>)
+
+
+var imovie = videoLista(titolo: "Layout e inserimento video", data: "9 Mar 2017", autore: "Fabrizio Gherardi", immagine: <#T##UIImage#>)
+var imovie1 = videoLista(titolo: "Le transizioni,le mappe e gli sfondi", data: "11 Mar 2017", autore: "Fabrizio Gherardi", immagine: <#T##UIImage#>)
+var imovie2 = videoLista(titolo: "Settaggi video e titoli", data: "12 Mar 2017", autore: "Fabrizio Gherardi", immagine: <#T##UIImage#>)
+var imovie3 = videoLista(titolo: "Effetti audio e suoni", data: "14 Mar 2017", autore: "Fabrizio Gherardi", immagine: <#T##UIImage#>)
+var imovie4 = videoLista(titolo: "Gli effetti video", data: "16 Mar 2017", autore: "Fabrizio Gherardi", immagine: <#T##UIImage#>)
+var imovie5 = videoLista(titolo: "I temi", data: "18 Mar 2017", autore: "Fabrizio Gherardi", immagine: <#T##UIImage#>)
+var imovie6 = videoLista(titolo: "I trailer", data: "18 Mar 2017", autore: "Fabrizio Gherardi", immagine: <#T##UIImage#>)
+var imovie7 = videoLista(titolo: "Il rendering", data: "21 Mar 2017", autore: "Fabrizio Gherardi", immagine: <#T##UIImage#>)
 
 
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A415324202D9E080000E12C /* TableViewCellConsigliUtili.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A415323202D9E080000E12C /* TableViewCellConsigliUtili.swift */; };
+		5A415326202D9E290000E12C /* TableViewControllerConsigliUtii.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A415325202D9E290000E12C /* TableViewControllerConsigliUtii.swift */; };
 		5ABD6B56202C439F009A4C4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABD6B55202C439F009A4C4A /* AppDelegate.swift */; };
 		5ABD6B58202C439F009A4C4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABD6B57202C439F009A4C4A /* ViewController.swift */; };
 		5ABD6B5B202C439F009A4C4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ABD6B59202C439F009A4C4A /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A415323202D9E080000E12C /* TableViewCellConsigliUtili.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellConsigliUtili.swift; sourceTree = "<group>"; };
+		5A415325202D9E290000E12C /* TableViewControllerConsigliUtii.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerConsigliUtii.swift; sourceTree = "<group>"; };
 		5ABD6B52202C439F009A4C4A /* EasyMovie 1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EasyMovie 1.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ABD6B55202C439F009A4C4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5ABD6B57202C439F009A4C4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				5ABD6B55202C439F009A4C4A /* AppDelegate.swift */,
 				5ABD6B57202C439F009A4C4A /* ViewController.swift */,
 				5ABD6B59202C439F009A4C4A /* Main.storyboard */,
+				5A415323202D9E080000E12C /* TableViewCellConsigliUtili.swift */,
+				5A415325202D9E290000E12C /* TableViewControllerConsigliUtii.swift */,
 				5ABD6B69202C6839009A4C4A /* Database.swift */,
 				8B392135202C61C600B64AAB /* TableViewCell.swift */,
 				8B392137202C620300B64AAB /* TableViewController.swift */,
@@ -147,8 +153,10 @@
 			files = (
 				8B392136202C61C600B64AAB /* TableViewCell.swift in Sources */,
 				5ABD6B58202C439F009A4C4A /* ViewController.swift in Sources */,
+				5A415324202D9E080000E12C /* TableViewCellConsigliUtili.swift in Sources */,
 				5ABD6B56202C439F009A4C4A /* AppDelegate.swift in Sources */,
 				5ABD6B6A202C6839009A4C4A /* Database.swift in Sources */,
+				5A415326202D9E290000E12C /* TableViewControllerConsigliUtii.swift in Sources */,
 				8B392138202C620300B64AAB /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

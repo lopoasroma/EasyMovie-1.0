@@ -211,13 +211,13 @@
         <!--Home-->
         <scene sceneID="xd6-UA-pJA">
             <objects>
-                <tableViewController title="Home" id="pq2-zi-I44" customClass="TableViewController" customModule="EasyMovie_1_0" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Home" id="pq2-zi-I44" customClass="TableViewControllerConsigliUtii" customModule="EasyMovie_1_0" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="112" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xA9-kd-Tbm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="100" reuseIdentifier="cell" rowHeight="116" id="xnX-nZ-R3V" customClass="TableViewCell" customModule="EasyMovie_1_0" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="100" reuseIdentifier="cellConsigliUtili" rowHeight="116" id="xnX-nZ-R3V" customClass="TableViewCellConsigliUtili" customModule="EasyMovie_1_0" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="116"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xnX-nZ-R3V" id="Vbs-BD-MYo">
@@ -229,26 +229,38 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titolo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqI-Ul-jbG">
-                                            <rect key="frame" x="190" y="0.0" width="185" height="27"/>
+                                            <rect key="frame" x="190" y="11" width="185" height="27"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="nome                                                      data                                                         " selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqD-wn-s3y">
-                                            <rect key="frame" x="190" y="26" width="178" height="73"/>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="autore" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gek-XZ-8ay">
+                                            <rect key="frame" x="190" y="74" width="178" height="25"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="data" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqD-wn-s3y">
+                                            <rect key="frame" x="190" y="45" width="178" height="25"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="autoreCU" destination="gek-XZ-8ay" id="GKi-9F-bEM"/>
+                                    <outlet property="dataCU" destination="qqD-wn-s3y" id="WEF-WY-5nV"/>
                                     <outlet property="dettagliCategoria" destination="qqD-wn-s3y" id="ROQ-S9-QBu"/>
                                     <outlet property="foto" destination="ExT-5k-k8Q" id="jzl-Aw-FwW"/>
+                                    <outlet property="immagineCU" destination="ExT-5k-k8Q" id="M0j-bz-9Qt"/>
                                     <outlet property="nomeCategoria" destination="uqI-Ul-jbG" id="7CP-Xx-RXm"/>
+                                    <outlet property="titoloCU" destination="uqI-Ul-jbG" id="MCa-et-hOO"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -263,7 +275,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oS1-tu-h5D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1" y="1834"/>
+            <point key="canvasLocation" x="0.80000000000000004" y="1833.7331334332835"/>
         </scene>
     </scenes>
     <resources>

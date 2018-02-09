@@ -1,24 +1,20 @@
 //
-//  TableViewController.swift
+//  TableViewControllerConsigliUtii.swift
 //  EasyMovie 1.0
 //
-//  Created by Anna de Rosa on 08/02/18.
+//  Created by Luigi Procentese on 09/02/18.
 //  Copyright © 2018 Luigi Procentese. All rights reserved.
 //
 
 import UIKit
 
-class TableViewController: UITableViewController {
+class TableViewControllerConsigliUtii: UITableViewController {
 
+    var elementoSelezionato: categoriaHome?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationItem.titleView = UIImageView(image: #imageLiteral(resourceName: "EasyMovielogo"))
-        consigliU.listaVideo.append(consigli1)
-        consigliU.listaVideo.append(consigli2)
-        consigliU.listaVideo.append(consigli3)
-        consigliU.listaVideo.append(consigli4)
-        consigliU.listaVideo.append(consigli5)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -40,21 +36,14 @@ class TableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return elencoCategorie.count
+        return (elementoSelezionato?.listaVideo.count)!
     }
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellConsigliUtili", for: indexPath) as! TableViewCellConsigliUtili
+        cell.autoreCU.text = elementoSelezionato?.listaVideo[indexPath.row].autore
         // Configure the cell...
-        
-        let i = indexPath.row
-        cell.dettagliCategoria.text = elencoCategorie[i].descrizione
-        cell.nomeCategoria.text = elencoCategorie[i].nome
-        cell.foto.image = elencoCategorie[i].immagine
-        
-        
 
         return cell
     }
@@ -94,18 +83,14 @@ class TableViewController: UITableViewController {
     }
     */
 
-    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        let destinazione = segue.destination as! TableViewControllerConsigliUtii
-        let i = tableView.indexPathForSelectedRow?.row
-        destinazione.elementoSelezionato = elencoCategorie[i]
-    
     }
- 
+    */
 
 }
