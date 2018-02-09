@@ -146,7 +146,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="dettagliCategoria" destination="bSe-9b-CN3" id="F8V-6W-yf5"/>
+                                    <outlet property="dettagliCategoria" destination="bSe-9b-CN3" id="aqb-VQ-oDp"/>
                                     <outlet property="foto" destination="V4S-5v-LOh" id="bLX-JY-wnM"/>
                                     <outlet property="nomeCategoria" destination="lYl-0F-jAK" id="QqK-pM-NfN"/>
                                     <segue destination="pq2-zi-I44" kind="show" id="zOr-7C-NqS"/>
@@ -254,13 +254,10 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="autoreCU" destination="gek-XZ-8ay" id="GKi-9F-bEM"/>
-                                    <outlet property="dataCU" destination="qqD-wn-s3y" id="WEF-WY-5nV"/>
-                                    <outlet property="dettagliCategoria" destination="qqD-wn-s3y" id="ROQ-S9-QBu"/>
-                                    <outlet property="foto" destination="ExT-5k-k8Q" id="jzl-Aw-FwW"/>
-                                    <outlet property="immagineCU" destination="ExT-5k-k8Q" id="M0j-bz-9Qt"/>
-                                    <outlet property="nomeCategoria" destination="uqI-Ul-jbG" id="7CP-Xx-RXm"/>
-                                    <outlet property="titoloCU" destination="uqI-Ul-jbG" id="MCa-et-hOO"/>
+                                    <outlet property="autoreCU" destination="gek-XZ-8ay" id="5BH-Pi-BEd"/>
+                                    <outlet property="dataCU" destination="qqD-wn-s3y" id="FMq-4X-YRS"/>
+                                    <outlet property="immagineCU" destination="ExT-5k-k8Q" id="2vw-wB-9wd"/>
+                                    <outlet property="titoloCU" destination="uqI-Ul-jbG" id="UGO-KC-UO4"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

@@ -10,7 +10,7 @@ import UIKit
 
 class TableViewControllerConsigliUtii: UITableViewController {
 
-    var elementoSelezionato: categoriaHome?
+    var elementoSelezionato: categoriaHome!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +36,7 @@ class TableViewControllerConsigliUtii: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return (elementoSelezionato?.listaVideo.count)!
+        return elementoSelezionato.listaVideo.count
     }
 
 

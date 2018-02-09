@@ -70,7 +70,7 @@ class TableViewController: UITableViewController {
         // Configure the cell...
         
         let i = indexPath.row
-        cell.dettagliCategoria.text = elencoCategorie[i].descrizione
+      //  cell.dettagliCategoria.text = elencoCategorie[i].descrizione
         cell.nomeCategoria.text = elencoCategorie[i].nome
         cell.foto.image = elencoCategorie[i].immagine
         
