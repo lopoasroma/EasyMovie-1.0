@@ -146,7 +146,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="dettagliCategoria" destination="bSe-9b-CN3" id="nfL-9c-BTs"/>
+                                    <outlet property="dettagliCategoria" destination="bSe-9b-CN3" id="F8V-6W-yf5"/>
                                     <outlet property="foto" destination="V4S-5v-LOh" id="bLX-JY-wnM"/>
                                     <outlet property="nomeCategoria" destination="lYl-0F-jAK" id="QqK-pM-NfN"/>
                                     <segue destination="pq2-zi-I44" kind="show" id="zOr-7C-NqS"/>
@@ -217,7 +217,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="100" reuseIdentifier="cellConsigliUtili" rowHeight="116" id="xnX-nZ-R3V" customClass="TableViewCellConsigliUtili" customModule="EasyMovie_1_0" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="100" reuseIdentifier="cell2" rowHeight="116" id="xnX-nZ-R3V" customClass="TableViewCellConsigliUtili" customModule="EasyMovie_1_0" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="116"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xnX-nZ-R3V" id="Vbs-BD-MYo">

@@ -78,31 +78,14 @@ var movieMaker2 = videoLista(titolo: "Corso completo di Movie Maker-Parte 2", da
 var movieMaker3 = videoLista(titolo: "Corso completo di Movie Maker-Parte 3", data: "26 Luglio 2016", autore: "Fabrizio Gherardi", immagine: #imageLiteral(resourceName: "MovieM3"))
 
 
-var imovie = videoLista(titolo: "Layout e inserimento video", data: "9 Mar 2017", autore: "Fabrizio Gherardi", immagine: #imageLiteral(resourceName: "iMovie1"))
-var imovie1 = videoLista(titolo: "Le transizioni,le mappe e gli sfondi", data: "11 Mar 2017", autore: "Fabrizio Gherardi", immagine: #imageLiteral(resourceName: "iMovie2"))
-var imovie2 = videoLista(titolo: "Settaggi video e titoli", data: "12 Mar 2017", autore: "Fabrizio Gherardi", immagine: #imageLiteral(resourceName: "iMovie3"))
-var imovie3 = videoLista(titolo: "Effetti audio e suoni", data: "14 Mar 2017", autore: "Fabrizio Gherardi", immagine: #imageLiteral(resourceName: "iMovie 4"))
-var imovie4 = videoLista(titolo: "Gli effetti video", data: "16 Mar 2017", autore: "Fabrizio Gherardi", immagine: #imageLiteral(resourceName: "iMovie5"))
-var imovie5 = videoLista(titolo: "I temi", data: "18 Mar 2017", autore: "Fabrizio Gherardi", immagine: #imageLiteral(resourceName: "iMovie6"))
-var imovie6 = videoLista(titolo: "I trailer", data: "18 Mar 2017", autore: "Fabrizio Gherardi", immagine: #imageLiteral(resourceName: "iMovie7"))
-var imovie7 = videoLista(titolo: "Il rendering", data: "21 Mar 2017", autore: "Fabrizio Gherardi", immagine: #imageLiteral(resourceName: "iMovie8"))
-
-
-var movieMaker1 = videoLista(titolo: "Corso completo di Movie Maker-Parte 1", data: "26 Luglio 2016", autore: "Fabrizio Gherardi", immagine: <#T##UIImage#>)
-var movieMaker2 = videoLista(titolo: "Corso completo di Movie Maker-Parte 2", data: "26 Luglio 2016", autore: "Fabrizio Gherardi", immagine: <#T##UIImage#>)
-var movieMaker3 = videoLista(titolo: "Corso completo di Movie Maker-Parte 3", data: "26 Luglio 2016", autore: "Fabrizio Gherardi", immagine: <#T##UIImage#>)
-
-
-var imovie = videoLista(titolo: "Layout e inserimento video", data: "9 Mar 2017", autore: "Fabrizio Gherardi", immagine: <#T##UIImage#>)
-var imovie1 = videoLista(titolo: "Le transizioni,le mappe e gli sfondi", data: "11 Mar 2017", autore: "Fabrizio Gherardi", immagine: <#T##UIImage#>)
-var imovie2 = videoLista(titolo: "Settaggi video e titoli", data: "12 Mar 2017", autore: "Fabrizio Gherardi", immagine: <#T##UIImage#>)
-var imovie3 = videoLista(titolo: "Effetti audio e suoni", data: "14 Mar 2017", autore: "Fabrizio Gherardi", immagine: <#T##UIImage#>)
-var imovie4 = videoLista(titolo: "Gli effetti video", data: "16 Mar 2017", autore: "Fabrizio Gherardi", immagine: <#T##UIImage#>)
-var imovie5 = videoLista(titolo: "I temi", data: "18 Mar 2017", autore: "Fabrizio Gherardi", immagine: <#T##UIImage#>)
-var imovie6 = videoLista(titolo: "I trailer", data: "18 Mar 2017", autore: "Fabrizio Gherardi", immagine: <#T##UIImage#>)
-var imovie7 = videoLista(titolo: "Il rendering", data: "21 Mar 2017", autore: "Fabrizio Gherardi", immagine: <#T##UIImage#>)
-
-
+var imovie1 = videoLista(titolo: "Layout e inserimento video", data: "9 Mar 2017", autore: "Fabrizio Gherardi", immagine: #imageLiteral(resourceName: "iMovie1"))
+var imovie2 = videoLista(titolo: "Le transizioni,le mappe e gli sfondi", data: "11 Mar 2017", autore: "Fabrizio Gherardi", immagine: #imageLiteral(resourceName: "iMovie2"))
+var imovie3 = videoLista(titolo: "Settaggi video e titoli", data: "12 Mar 2017", autore: "Fabrizio Gherardi", immagine: #imageLiteral(resourceName: "iMovie3"))
+var imovie4 = videoLista(titolo: "Effetti audio e suoni", data: "14 Mar 2017", autore: "Fabrizio Gherardi", immagine: #imageLiteral(resourceName: "iMovie 4"))
+var imovie5 = videoLista(titolo: "Gli effetti video", data: "16 Mar 2017", autore: "Fabrizio Gherardi", immagine: #imageLiteral(resourceName: "iMovie5"))
+var imovie6 = videoLista(titolo: "I temi", data: "18 Mar 2017", autore: "Fabrizio Gherardi", immagine: #imageLiteral(resourceName: "iMovie6"))
+var imovie7 = videoLista(titolo: "I trailer", data: "18 Mar 2017", autore: "Fabrizio Gherardi", immagine: #imageLiteral(resourceName: "iMovie7"))
+var imovie8 = videoLista(titolo: "Il rendering", data: "21 Mar 2017", autore: "Fabrizio Gherardi", immagine: #imageLiteral(resourceName: "iMovie8"))
 
 
 

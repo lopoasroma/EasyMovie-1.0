@@ -19,6 +19,26 @@ class TableViewController: UITableViewController {
         consigliU.listaVideo.append(consigli3)
         consigliU.listaVideo.append(consigli4)
         consigliU.listaVideo.append(consigli5)
+        consigliU.listaVideo.append(consigli6)
+        consigliU.listaVideo.append(consigli7)
+        consigliU.listaVideo.append(consigli8)
+        
+        movieMaker.listaVideo.append(movieMaker1)
+        movieMaker.listaVideo.append(movieMaker2)
+        movieMaker.listaVideo.append(movieMaker3)
+
+        iMovie.listaVideo.append(imovie1)
+        iMovie.listaVideo.append(imovie2)
+        iMovie.listaVideo.append(imovie3)
+        iMovie.listaVideo.append(imovie4)
+        iMovie.listaVideo.append(imovie5)
+        iMovie.listaVideo.append(imovie6)
+        iMovie.listaVideo.append(imovie7)
+        iMovie.listaVideo.append(imovie8)
+
+
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -103,7 +123,7 @@ class TableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
         let destinazione = segue.destination as! TableViewControllerConsigliUtii
         let i = tableView.indexPathForSelectedRow?.row
-        destinazione.elementoSelezionato = elencoCategorie[i]
+        destinazione.elementoSelezionato = elencoCategorie[i!]
     
     }
  

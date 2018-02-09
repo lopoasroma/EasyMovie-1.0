@@ -41,8 +41,13 @@ class TableViewControllerConsigliUtii: UITableViewController {
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellConsigliUtili", for: indexPath) as! TableViewCellConsigliUtili
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell2", for: indexPath) as! TableViewCellConsigliUtili
         cell.autoreCU.text = elementoSelezionato?.listaVideo[indexPath.row].autore
+        cell.titoloCU.text = elementoSelezionato?.listaVideo[indexPath.row].titolo
+        cell.dataCU.text = elementoSelezionato?.listaVideo[indexPath.row].data
+        cell.immagineCU.image = elementoSelezionato?.listaVideo[indexPath.row].immagine
+
+
         // Configure the cell...
 
         return cell
