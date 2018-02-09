@@ -29,6 +29,7 @@ struct videoPlay {
     var salvato: Bool
 }
 
+
 var intro = categoriaHome(nome: "Introduzione", immagine: #imageLiteral(resourceName: "jakob-owens-199505"), descrizione: "Benvenuto! Guarda questo video per apprendere i concetti base del video editing.")
 
 var consigliU = categoriaHome(nome: "Consigli utili", immagine: #imageLiteral(resourceName: "Consigli"), descrizione: "Qui troverai consigli utili per tutti i programmi di video editing. Consulta queste pagine prima di iniziare!")
@@ -46,5 +47,28 @@ var sonyVegas = categoriaHome(nome: "Sony Vegas", immagine: #imageLiteral(resour
 var hitFilm = categoriaHome(nome: "Hitfilm", immagine: #imageLiteral(resourceName: "IMG_0460"), descrizione: "Livello: Alto")
 
 var elencoCategorie = [intro,consigliU,movieMaker,iMovie,pinnacleStudio,wondershareFilmora,sonyVegas,hitFilm]
+
+
+
+var consigli1 = videoLista(categoria: consigliU, titolo: "Come ruotare un video su Mac", data: "25 Giu 2017", autore: "Fabrizio Gherardi", immagine: <#T##UIImage#>)
+var consigli2 = videoLista(categoria: consigliU, titolo: "Esportare un filmato senza perdita di qualità", data: "4 Ago 2014", autore: "Fabrizio Gherardi", immagine: UIImage)
+var consigli3 = videoLista(categoria: consigliU, titolo: "5 consigli per velocizzare il video editing", data: "18 Nov 2017", autore: "PaoloG Youtube", immagine: <#T##UIImage#>)
+var consigli4 = videoLista(categoria: consigliU, titolo: "Qual è il miglior formato per YouTube", data: "26 Dic 2017", autore: "PaoloG Youtube", immagine: <#T##UIImage#>)
+var consigli5 = videoLista(categoria: consigliU, titolo: "Come migliorare l'audio nei tuoi video", data: "4 Dic 2014", autore: "PaoloG Youtube", immagine: <#T##UIImage#>)
+var consigli6 = videoLista(categoria: consigliU, titolo: "Migliorare l'illuminazione nei tuoi video", data: "12 Dic 2014", autore: "PaoloG Youtube", immagine: <#T##UIImage#>)
+var consigli7 = videoLista(categoria: consigliU, titolo: "Come avere uno sfondo neutro", data: "16 Gen 2015", autore: "PaoloG Youtube", immagine: <#T##UIImage#>)
+var consigli8 = videoLista(categoria: consigliU, titolo: "Avere lo sfondo totalmente bianco stile Apple", data: "7 Mar 2015", autore: "PaoloG Youtube", immagine: <#T##UIImage#>)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
