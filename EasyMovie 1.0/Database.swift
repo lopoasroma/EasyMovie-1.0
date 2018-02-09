@@ -66,7 +66,7 @@ var elencoCategorie = [intro,consigliU,movieMaker,iMovie,pinnacleStudio,wondersh
 
 var consigli1 = videoLista(titolo: "Come ruotare un video su Mac", data: "25 Giu 2017", autore: "Fabrizio Gherardi", immagine: #imageLiteral(resourceName: "RuotareMac"))
 var consigli2 = videoLista(titolo: "Esportare un filmato senza perdita di qualità", data: "4 Ago 2014", autore: "Fabrizio Gherardi", immagine: #imageLiteral(resourceName: "Esportare"))
-var consigli3 = videoLista(titolo: "5 consigli per velocizzare il video editing", data: "18 Nov 2017", autore: "PaoloG Youtube", immagine: #imageLiteral(resourceName: "5Consigli"))
+var consigli3 = videoLista(titolo: "5 consigli per velocizzare il video editing", data: "18 Nov 2017", autore: "PaoloG Youtube", immagine: #imageLiteral(resourceName: "new"))
 var consigli4 = videoLista(titolo: "Qual è il miglior formato per YouTube", data: "26 Dic 2017", autore: "PaoloG Youtube", immagine: #imageLiteral(resourceName: "Miglior Formato"))
 var consigli5 = videoLista(titolo: "Come migliorare l'audio nei tuoi video", data: "4 Dic 2014", autore: "PaoloG Youtube", immagine: #imageLiteral(resourceName: "QualitàAudio"))
 var consigli6 = videoLista(titolo: "Migliorare l'illuminazione nei tuoi video", data: "12 Dic 2014", autore: "PaoloG Youtube", immagine: #imageLiteral(resourceName: "Illuminazione"))
