@@ -149,6 +149,7 @@
                                     <outlet property="dettagliCategoria" destination="bSe-9b-CN3" id="nfL-9c-BTs"/>
                                     <outlet property="foto" destination="V4S-5v-LOh" id="bLX-JY-wnM"/>
                                     <outlet property="nomeCategoria" destination="lYl-0F-jAK" id="QqK-pM-NfN"/>
+                                    <segue destination="pq2-zi-I44" kind="show" id="zOr-7C-NqS"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -206,6 +207,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kbf-SN-eHR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-814" y="1056"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="xd6-UA-pJA">
+            <objects>
+                <tableViewController title="Home" id="pq2-zi-I44" customClass="TableViewController" customModule="EasyMovie_1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="112" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xA9-kd-Tbm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="100" reuseIdentifier="cell" rowHeight="116" id="xnX-nZ-R3V" customClass="TableViewCell" customModule="EasyMovie_1_0" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="116"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xnX-nZ-R3V" id="Vbs-BD-MYo">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="115.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ExT-5k-k8Q">
+                                            <rect key="frame" x="7" y="11" width="148" height="88"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titolo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqI-Ul-jbG">
+                                            <rect key="frame" x="190" y="0.0" width="185" height="27"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="nome                                                      data                                                         " selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqD-wn-s3y">
+                                            <rect key="frame" x="190" y="26" width="178" height="73"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dettagliCategoria" destination="qqD-wn-s3y" id="ROQ-S9-QBu"/>
+                                    <outlet property="foto" destination="ExT-5k-k8Q" id="jzl-Aw-FwW"/>
+                                    <outlet property="nomeCategoria" destination="uqI-Ul-jbG" id="7CP-Xx-RXm"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="pq2-zi-I44" id="cKC-80-Que"/>
+                            <outlet property="delegate" destination="pq2-zi-I44" id="MrG-Eu-caG"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home" id="7aG-Nn-4wb"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oS1-tu-h5D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1" y="1834"/>
         </scene>
     </scenes>
     <resources>
