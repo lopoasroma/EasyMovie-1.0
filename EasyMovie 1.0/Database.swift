@@ -59,6 +59,19 @@ var consigli6 = videoLista(categoria: consigliU, titolo: "Migliorare l'illuminaz
 var consigli7 = videoLista(categoria: consigliU, titolo: "Come avere uno sfondo neutro", data: "16 Gen 2015", autore: "PaoloG Youtube", immagine: <#T##UIImage#>)
 var consigli8 = videoLista(categoria: consigliU, titolo: "Avere lo sfondo totalmente bianco stile Apple", data: "7 Mar 2015", autore: "PaoloG Youtube", immagine: <#T##UIImage#>)
 
+var movieMaker1 = videoLista(categoria: movieMaker, titolo: "Corso completo di Movie Maker-Parte 1", data: "26 Luglio 2016", autore: "Fabrizio Gherardi", immagine: <#T##UIImage#>)
+var movieMaker2 = videoLista(categoria: movieMaker, titolo: "Corso completo di Movie Maker-Parte 2", data: "26 Luglio 2016", autore: "Fabrizio Gherardi", immagine: <#T##UIImage#>)
+var movieMaker3 = videoLista(categoria: movieMaker, titolo: "Corso completo di Movie Maker-Parte 3", data: "26 Luglio 2016", autore: "Fabrizio Gherardi", immagine: <#T##UIImage#>)
+
+
+var imovie = videoLista(categoria: iMovie , titolo: "Layout e inserimento video", data: "9 Mar 2017", autore: "Fabrizio Gherardi", immagine: <#T##UIImage#>)
+var imovie1 = videoLista(categoria: iMovie , titolo: "Le transizioni,le mappe e gli sfondi", data: "11 Mar 2017", autore: "Fabrizio Gherardi", immagine: <#T##UIImage#>)
+var imovie2 = videoLista(categoria: iMovie , titolo: "Settaggi video e titoli", data: "12 Mar 2017", autore: "Fabrizio Gherardi", immagine: <#T##UIImage#>)
+var imovie3 = videoLista(categoria: iMovie , titolo: "Effetti audio e suoni", data: "14 Mar 2017", autore: "Fabrizio Gherardi", immagine: <#T##UIImage#>)
+var imovie4 = videoLista(categoria: iMovie , titolo: "Gli effetti video", data: "16 Mar 2017", autore: "Fabrizio Gherardi", immagine: <#T##UIImage#>)
+var imovie5 = videoLista(categoria: iMovie , titolo: "I temi", data: "18 Mar 2017", autore: "Fabrizio Gherardi", immagine: <#T##UIImage#>)
+var imovie6 = videoLista(categoria: iMovie , titolo: "I trailer", data: "18 Mar 2017", autore: "Fabrizio Gherardi", immagine: <#T##UIImage#>)
+var imovie7 = videoLista(categoria: iMovie , titolo: "Il rendering", data: "21 Mar 2017", autore: "Fabrizio Gherardi", immagine: <#T##UIImage#>)
 
 
 
