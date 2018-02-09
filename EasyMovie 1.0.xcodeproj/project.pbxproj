@@ -17,6 +17,8 @@
 		5ABD6B6A202C6839009A4C4A /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABD6B69202C6839009A4C4A /* Database.swift */; };
 		8B392136202C61C600B64AAB /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B392135202C61C600B64AAB /* TableViewCell.swift */; };
 		8B392138202C620300B64AAB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B392137202C620300B64AAB /* TableViewController.swift */; };
+		FD8BB934202DC04F00160ABA /* ViewControllerVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8BB933202DC04F00160ABA /* ViewControllerVideo.swift */; };
+		FD8BB938202DC2EA00160ABA /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8BB937202DC2EA00160ABA /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		5ABD6B69202C6839009A4C4A /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		8B392135202C61C600B64AAB /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		8B392137202C620300B64AAB /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		FD8BB933202DC04F00160ABA /* ViewControllerVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerVideo.swift; sourceTree = "<group>"; };
+		FD8BB937202DC2EA00160ABA /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				5A415323202D9E080000E12C /* TableViewCellConsigliUtili.swift */,
 				5A415325202D9E290000E12C /* TableViewControllerConsigliUtii.swift */,
 				5ABD6B59202C439F009A4C4A /* Main.storyboard */,
+				FD8BB937202DC2EA00160ABA /* WebViewController.swift */,
+				FD8BB933202DC04F00160ABA /* ViewControllerVideo.swift */,
 				5ABD6B69202C6839009A4C4A /* Database.swift */,
 				8B392135202C61C600B64AAB /* TableViewCell.swift */,
 				8B392137202C620300B64AAB /* TableViewController.swift */,
@@ -152,7 +158,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B392136202C61C600B64AAB /* TableViewCell.swift in Sources */,
+				FD8BB938202DC2EA00160ABA /* WebViewController.swift in Sources */,
 				5ABD6B58202C439F009A4C4A /* ViewController.swift in Sources */,
+				FD8BB934202DC04F00160ABA /* ViewControllerVideo.swift in Sources */,
 				5A415324202D9E080000E12C /* TableViewCellConsigliUtili.swift in Sources */,
 				5ABD6B56202C439F009A4C4A /* AppDelegate.swift in Sources */,
 				5ABD6B6A202C6839009A4C4A /* Database.swift in Sources */,

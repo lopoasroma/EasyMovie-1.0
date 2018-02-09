@@ -258,6 +258,7 @@
                                     <outlet property="dataCU" destination="qqD-wn-s3y" id="FMq-4X-YRS"/>
                                     <outlet property="immagineCU" destination="ExT-5k-k8Q" id="2vw-wB-9wd"/>
                                     <outlet property="titoloCU" destination="uqI-Ul-jbG" id="UGO-KC-UO4"/>
+                                    <segue destination="uxH-wS-qVD" kind="show" id="1C8-YZ-uTf"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -274,6 +275,46 @@
             </objects>
             <point key="canvasLocation" x="0.80000000000000004" y="1833.7331334332835"/>
         </scene>
+        <!--Web-->
+        <scene sceneID="yD0-X7-bxF">
+            <objects>
+                <viewController id="uxH-wS-qVD" customClass="WebViewController" customModule="EasyMovie_1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jsf-dj-ceu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8MO-CN-T8Q">
+                                <rect key="frame" x="9" y="74" width="357" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://www.youtube.com/watch?v=0TMruPVtHWc" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vJJ-2R-2kz">
+                                <rect key="frame" x="139" y="74" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="bE6-NJ-Ilv"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Web" image="web" id="pKR-S6-FWv"/>
+                    <connections>
+                        <outlet property="browser" destination="8MO-CN-T8Q" id="KaC-Uk-Tlf"/>
+                        <outlet property="tUrl" destination="vJJ-2R-2kz" id="zYT-zu-pLo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YUP-kx-3oc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.80000000000000004" y="2601.9490254872567"/>
+        </scene>
     </scenes>
     <resources>
         <image name="EasyMovie" width="249" height="62"/>
@@ -282,5 +323,6 @@
         <image name="Preferiti" width="30" height="30"/>
         <image name="Profilo" width="30" height="30"/>
         <image name="jon-flobrant-462820" width="2463" height="1642"/>
+        <image name="web" width="16" height="16"/>
     </resources>
 </document>
