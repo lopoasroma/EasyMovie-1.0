@@ -14,6 +14,8 @@ class TableViewControllerConsigliUtii: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = elementoSelezionato.nome
+
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
