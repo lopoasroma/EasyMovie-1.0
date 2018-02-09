@@ -14,6 +14,11 @@ class TableViewController: UITableViewController {
         super.viewDidLoad()
 
         navigationItem.titleView = UIImageView(image: #imageLiteral(resourceName: "EasyMovielogo"))
+        consigliU.listaVideo.append(consigli1)
+        consigliU.listaVideo.append(consigli2)
+        consigliU.listaVideo.append(consigli3)
+        consigliU.listaVideo.append(consigli4)
+        consigliU.listaVideo.append(consigli5)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -89,14 +94,18 @@ class TableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        let destinazione = segue.destination as! TableViewControllerConsigliUtii
+        let i = tableView.indexPathForSelectedRow?.row
+        destinazione.elementoSelezionato = elencoCategorie[i]
+    
     }
-    */
+ 
 
 }

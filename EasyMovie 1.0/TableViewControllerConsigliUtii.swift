@@ -10,6 +10,8 @@ import UIKit
 
 class TableViewControllerConsigliUtii: UITableViewController {
 
+    var elementoSelezionato: categoriaHome?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,13 +36,13 @@ class TableViewControllerConsigliUtii: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return (elementoSelezionato?.listaVideo.count)!
     }
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellConsigliUtili", for: indexPath) as! TableViewCellConsigliUtili
-
+        cell.autoreCU.text = elementoSelezionato?.listaVideo[indexPath.row].autore
         // Configure the cell...
 
         return cell
